@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voice Recorder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { 
+            text-align: center; 
+            font-family: Arial, sans-serif; 
+            padding-top: 50px; 
+        }
+        button { 
+            margin: 10px; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button id="startRecord">Start Recording</button>
+        <button id="stopRecord" disabled>Stop Recording</button>
+        <button id="playRecord" disabled>Play Recording</button>
+        
+        <p id="statusText">Ready to record</p>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

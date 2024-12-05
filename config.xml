@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget
+    id="com.example.voicerecorder"
+    version="1.0.0"
+    xmlns="http://www.w3.org/ns/widgets"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>VoiceRecorder</name>
+    <description>Voice Recorder App</description>
+    <plugin name="cordova-plugin-media" spec="^5.0.2" />
+    <plugin name="cordova-plugin-android-permissions" spec="^1.1.2" />
+    <plugin name="cordova-plugin-file" spec="^6.0.2" />
+    <preference name="android-compileSdkVersion" value="34" />
+    <preference name="android-targetSdkVersion" value="34" />
+    <preference name="android-minSdkVersion" value="21" />
+    
+    <platform name="android">
+        <!-- Remove duplicate permission declarations -->
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+        </config-file>
+    </platform>
+</widget>
